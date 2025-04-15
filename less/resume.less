@@ -1,0 +1,117 @@
+.resumeForm{
+    width: 100%;
+    background: url(../img/pexels-yentl-jacobs-43020-157811.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    .layer{
+        width: 100%;
+        height: 100%;
+        // background: rgba(184, 6, 6, 0.4);
+        background: rgba(1, 26, 36, 0.9);
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 70px 0;
+            .flex_b;
+            article{
+                width: 600px;
+                h1{
+                    font-size: 37px;
+                    font-weight: 700;
+                    color: @mainClr;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+            form{
+                width: 600px;
+                border-radius: 24px;
+                background: rgb(255, 254, 254);
+                padding: 40px 35px;
+                padding-bottom: 20px;
+                h2{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    color: @mainClr;
+                    // letter-spacing: 0.8px;
+                }
+                .vacancies{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .vacancy{
+                        border: 1px solid rgb(120, 120, 120);
+                        border-radius: 50px;
+                        padding: 10px 20px;
+                        margin-bottom: 20px;
+                        margin-right: 20px;
+                        transition: 0.2s;
+                        color: rgb(120, 120, 120);
+                    }
+                    :hover{
+                        border-color: @mainClr;
+                        cursor: pointer;
+                    }
+                }
+                h3{
+                    color: rgb(183, 183, 183);
+                    margin-bottom: 13px;
+                }
+                input{
+                    border-bottom: 2px solid rgb(205, 205, 205);
+                    padding-bottom: 13px;
+                    outline: none;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    color: rgba(0, 0, 0, 1);
+                    &[type="file"]{
+                        display: none;
+                    }
+                    &[type="submit"]{
+                        border: none;
+                        padding-bottom: 0;
+                        padding: 16px 71px;
+                        background-color: @mainClr;
+                        border-radius: 50px;
+                        color: #fff;
+                        margin-top: 30px;
+                        font-family: inMed;
+                        transition: 0.2s;
+                        &:hover{
+                            background-color: #d3322f;
+                            cursor: pointer;
+                        }
+                    }
+                    &:focus{
+                        border-bottom: 2px solid @mainClr;
+                    }
+                }
+                .selectFile{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .inputFile{
+                        background: @mainClr;
+                        color: #fff;
+                        padding: 11px 30px;
+                        margin-right: 25px;
+                        .flex_c;
+                        border-radius: 26px;
+                        i{
+                            margin-right: 15px;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+    
+                    }
+                    h3{
+                        margin-bottom: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

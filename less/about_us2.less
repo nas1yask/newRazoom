@@ -1,0 +1,76 @@
+.about_us2{
+    width: 100%;
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid red;
+    .absl1,.absl2,.absl3,.abs7,.abs8,.abs9{
+        position: absolute;
+        // z-index: -3;
+        width: 600px;
+    }
+    .absl1{
+        left: -300px;
+        top: -270px;
+    }
+    .absl2{
+        left: -200px;
+        top: -300px;
+    }
+    .absl3{
+        left: -350px;
+        top: -260px;
+    }
+    .abs7{
+        right: -250px;
+        bottom: -400px;
+    }
+    .abs8{
+        right: -200px;
+        bottom: -400px;
+    }
+    .abs9{
+        right: -370px;
+        bottom: -340px;
+    }
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+
+        // background-color: pink;
+        article{
+            .flex_b;
+            position: relative;
+            nav{
+                width: 45%;
+                height: 320px;
+                background: url(../img/about1.jpg) no-repeat center/cover; 
+                border-radius: 20px 0 20px 0;
+            } 
+            section{
+                padding: 30px 20px;
+                width: 52%;
+                .flex_b;
+                flex-direction: column;
+                h2{
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    font-family: inBold;
+                    span{
+                        color: @mainClr;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 24px;
+                    span{
+                        color: @mainClr;
+                    }
+                }
+                :nth-child(2){
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

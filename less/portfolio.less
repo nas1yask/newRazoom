@@ -1,0 +1,137 @@
+.portfolio{
+    width: 100%;
+    // background-color: rgb(16, 26, 36);
+    background: url(../img/pexels-enrique-12172766.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    .layer{
+        width: 100%;
+        height: 100%;
+        background: rgba(1, 26, 36, 0.92);
+        padding: 60px 0;
+        padding-bottom: 80px;
+        h2{
+            font-size: 37px;
+            font-family: inMed;
+            text-align: center;
+            margin-bottom: 65px;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            .flex_b;
+            align-items: flex-start;
+                .tabs{
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .tab{
+                        margin-bottom: 28px;
+                        border-bottom: 1.5px solid rgba(0, 0, 0, 0);
+                        transition: 0.4s;
+                        padding-bottom: 2px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                } 
+                .tab_content{
+                    width: 100%;
+                    // border: 1px red solid;
+                    .tab_item{
+                        .flex_b;
+                        flex-wrap: wrap;
+                        nav{
+                            // width: 30%;
+                            // height: 200px;
+                            // background: red;
+                            // margin-bottom: 20px;
+                            // border-radius: 25px 0 25px 0;
+                            // overflow: hidden;
+                            
+                            width: 31%;
+                            height: 470px;
+                            margin-bottom: 30px;
+                            border-radius: 30px;
+                            overflow: hidden;
+                            // box-shadow: 0px 0px 2px #ffffff74;
+                            .layer{
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                transition: 0.3s;
+    
+                                &::before{
+                                    content: 'NAZARBAYEV UNIVERSITY';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: rgba(255, 0, 0, 0.372);
+                                    transition: 0.3s;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: center;
+                                    color: #fff;
+                                    font-weight: 600;
+                                    transform: translateY(-30px);
+                                    padding-bottom: 30px;
+                                }
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+                                &:hover::before{
+                                    cursor: pointer;
+                                    opacity: 0;
+                                }
+                            }
+                        }
+                        &:nth-child(1){
+                            nav{
+                                &:nth-child(1){
+                                    .layer{
+                                        background: url(../img/HBJL9047.JPG) no-repeat center/cover;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    .layer{
+                                        background: url(../img/IMG-20241127-WA0119.jpg) no-repeat center/cover;
+                                    }
+                                    transform: translateY(50px);
+                                }
+                                &:nth-child(3){
+                                    .layer{
+                                        background: url(../img/shirP3.jpg) no-repeat center/cover;
+                                    }
+                                }
+                                &:nth-child(4){
+                                    .layer{
+                                        background: url(../img/IMG-20220810-WA0062.jpg) no-repeat center/cover;
+                                    }
+                                }
+                                &:nth-child(5){
+                                    transform: translateY(50px);
+                                    .layer{
+                                        background: url(../img/shirP5.jpg) no-repeat center/cover;
+                                    }
+                                }
+                                &:nth-child(6){
+                                    .layer{
+                                        background: url(../img/shirP4.jpg) no-repeat center/cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }      
+        }
+    }
+}
+
+.active{
+    color: @mainClr;
+    border-bottom: 1.5px solid @mainClr !important;
+}

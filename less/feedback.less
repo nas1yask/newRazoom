@@ -1,0 +1,108 @@
+.feedback{
+    width: 100%;
+    padding: 75px 0;
+    color: rgb(16, 26, 36);
+    position: relative;
+    overflow: hidden;
+    .abs7,.abs8,.abs9,.abs10,.abs11,.abs12{
+        position: absolute;
+        z-index: -3;
+        width: 600px;
+    }
+    .abs7{
+        right: -250px;
+        bottom: -400px;
+    }
+    .abs8{
+        right: -200px;
+        bottom: -400px;
+    }
+    .abs9{
+        right: -370px;
+        bottom: -340px;
+    }
+    .abs10{
+        left: -300px;
+        top: -270px;
+    }
+    .abs11{
+        left: -200px;
+        top: -300px;
+    }
+    .abs12{
+        left: -350px;
+        top: -260px;
+    }
+
+    .razoom_txt{
+        transform: rotate(90deg);
+        position: absolute;
+        right: -140px;
+        bottom: 20;
+        z-index: -1;
+
+        h4{
+            font-size: 100px; 
+            font-family: inBold;                       
+            background: linear-gradient(to top, rgba(252, 252, 255, 0.146), rgba(0, 0, 0, 0.075));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        h1{
+            font-size: 37px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        >p{
+            font-size: 18px;
+            margin-bottom: 100px;
+        }
+        .swiperFB{
+            width: 100vw;
+            max-width: 100%;
+            .swiper-slideFB{
+                width: 640px;
+                padding: 0px 120px;
+                margin: 0 auto;
+                position: relative;
+                padding-top: 70px;
+                padding-bottom: 40px;
+                border-radius: 70px 20px;
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07);
+                nav{
+                    position: absolute;
+                    background: url(../img/person-1.png);
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    left: calc(50% - 50px);
+                    top: -50px;
+                }
+                h4{
+                    margin-top: 10px;
+                    font-family: inSemiBold;
+                    font-size: 23px;
+                    margin-bottom: 15px;
+                    color: @mainClr;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+                .rating{
+                    width: 130px;
+                    .flex_b;
+                    margin: 0 auto;
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
