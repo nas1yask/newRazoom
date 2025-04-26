@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="other/slick/slick-theme.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- MAINBLOCK  -->
@@ -32,7 +33,7 @@
                     <li><a href="#services">Услуги</a></li>
                     <li><a href="#portfolio">Портфолио</a></li>
                     <li><a href="#feedback">Отзывы</a></li>
-                    <li><a href="#vacancies">Вакансии</a></li>
+                    <li><a href="#formBlock">Заказать</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </menu>
                 <a href="#" tel="#" class="tel">+7 778 778 78 78</a>
@@ -68,7 +69,22 @@
                 <div></div>
             </div> -->
 
-            <div class="slider">
+            <!-- VIDEO -->
+            
+            <!-- <video autoplay muted>
+                <source src="./video/video.mp4">
+            </video> -->
+
+            <div class="video">
+                <div class="layer">
+                    <nav>
+                        <i class="fa-solid fa-play"></i>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!-- <div class="slider">
                 <div>
                     <nav></nav>
                     <div class="desc">
@@ -77,12 +93,13 @@
                 </div>
             </div>
         </div>
-        <div class="layer"></div>
+        <div class="layer"></div> -->
     </section>
+
 
     <!-- ABOUT US -->
 
-    <div class="about_us parallax-window" data-parallax="scroll" data-image-src="img/aboutBG.jpg" id="about">
+    <div class="about_us parallax-window" data-parallax="scroll" data-image-src="img/about1.jpg" id="about">
       <div class="layer">
         <div class="container">
           <h2>О нас</h2>
@@ -110,7 +127,7 @@
             <article>
                 <nav></nav>
                 <section>
-                    <h2>О компании <span>Zoom</span></h2>
+                    <h2>О компании <span>"ZOOM"</span></h2>
                     <p>Мы предлагаем полный спектр услуг: от составления дизайн-проекта до монтажа готовых рекламных конструкций.</p>
                     <p>Собственное производство дает нам <span>возможность</span> быстро и качественно изготавливать любую рекламную продукцию, кроме того, это позволяет <span>нам</span> предлагать разумные и конкурентоспособные цены нашим клиентам. Существует гибкая система скидок для постоянных клиентов, <span>рекламных агентств,</span> сетевых магазинов, а также при заказе комплекса наружной рекламы.</p>
                 </section>
@@ -120,22 +137,37 @@
 
     <!-- SERVICES  -->
     <div class="services" id="services">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
+            <h1>Наши услуги</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="layer">
+                            <h3>Широкоформатная печать</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="layer">
+                            <h3>Государственная символика</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide slide9">
+                        <div class="layer">
+                            <h3>Наружная реклама</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-    
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-    
-            <div class="swiper-pagination"></div>
-        </div>    
     </div>
    
 
@@ -220,12 +252,13 @@
                 <h4>RAZOOM</h4>
             </div>
 
-            <div class="swiperFB mySwiper">
+            <div class="swiperFB">
                 <div class="swiper-wrapperFB">
                     <div class="swiper-slideFB">
                         <nav></nav>
-                        <h4>User 1</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate iure itaque, aut quo id qui consectetur ipsam impedit repellat, veritatis neque optio blanditiis sunt odio quisquam, ducimus voluptatem aperiam atque.</p>
+                        <h4>Антон Трушников</h4>
+                        <h6>4 января 2023</h6>
+                        <p>Отзывчивый персонал. Уютный офис. Видно, что дорожат своей репутацией, делают качественно. При возникновении вопросов встают на сторону клиента. Определённо буду обращаться только к ним.</p>
                         <div class="rating">
                             <i class="fa-solid fa-star" style="color: #F2403E;"></i>
                             <i class="fa-solid fa-star" style="color: #F2403E;"></i>
@@ -234,11 +267,107 @@
                             <i class="fa-solid fa-star" style="color: #F2403E;"></i>
                         </div>
                     </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Aygul Muhamedkarimova</h4>
+                        <h6>19 августа 2024</h6>
+                        <p>Заказывала рекламу у менеджера Альбины ,профессиональный подход .
+                            Сделали быстро и красиво. Квалифицированная консультация, после которой захотела заказать рекламу именно в Зуме. Благодарю!</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>❤beautiful life❤</h4>
+                        <h6>31 октября 2024</h6>
+                        <p>Добрый вечер, заказали вывеску сделали качественно 😍 благодарю всех
+                            сотрудников за проделанную работу 👍👏🏻 а вообще эту компанию знаю не первый год и видела лично их в работе поэтому  доверяю только им 😊</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Dinara Mukatova</h4>
+                        <h6>26 сентября 2023</h6>
+                        <p>Давно клиенты этой компании. Очень удобный сервис, где широкий спектр услуг и можно сделать все в одном месте. Рекомендую!</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Дина Кабдрахимова</h4>
+                        <h6>25 сентября 2023</h6>
+                        <p>Прекрасная типография! Лучшая в городе!
+                            Ответственные менеджеры, все делают очень качественно и быстро👍👍👍</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Kristina Meshcheryakova</h4>
+                        <h6>15 ноября 2019</h6>
+                        <p>Много лет работаем с этой компанией.
+                            Профессионалы и не равнодушные люди. Всегда качественно и в срок выполняют заказы.
+                            Рекомендую!!!</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Павел Педяш</h4>
+                        <h6>25 сентября 2023</h6>
+                        <p>Замечательная компания. Ответственный и дружелюбный персонал. Каждый на своём месте, каждый знает своё дело. Рекомендую!</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Natali G</h4>
+                        <h6>12 ноября 2019</h6>
+                        <p>Заказали оформления витрины!!! Дизайн, сроки исполнения - на высшем уровне!!! Спасибо!!!</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-
     <!-- FORM -->
 
     <div class="formBlock" id="formBlock">
@@ -266,14 +395,54 @@
 
     <!-- CERTIFICATES -->
 
+    
+
     <div class="certificates">
         <div class="container">
             <h2>Благодарности</h2>
             <div class="gramoty">
-                <div class="gramota"></div>
-                <div class="gramota"></div>
-                <div class="gramota"></div>
-                <div class="gramota"></div>
+                <a href="img/b1.jpg" data-lightbox="thanks" data-title="Описание благодарности">
+                    <div class="gramota">
+                        <div class="layer"></div>
+                    </div>
+                </a>
+                <div class="gramota centerImg">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota centerImg">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota centerImg">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota centerImg">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota centerImg">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota centerImg">
+                    <div class="layer"></div>
+                </div>
+                <div class="gramota">
+                    <div class="layer"></div>
+                </div>
+            </div>
+
+            <div class="show_all">
+                <button>Все благодарности</button>
             </div>
         </div>
     </div>
@@ -292,16 +461,16 @@
                     <h2>Меня интересует:</h2>
                     <div class="vacancies">
                         <div class="vacancy">Менеджер по продажам</div>
-                        <div class="vacancy">Офис-менеджер</div>
                         <div class="vacancy">Дизайнер-конструктор</div>
+                        <div class="vacancy">Офис-менеджер</div>
                         <div class="vacancy">Дизайнер</div>
+                        <div class="vacancy">Бухгалтер</div>
                         <div class="vacancy">Специалист отдела широкоформатной печати</div>
                         <div class="vacancy">Заведующий складом</div>
-                        <div class="vacancy">Бухгалтер</div>
                         <div class="vacancy">Водитель-монтажник</div>
                         <div class="vacancy">Монтажник-макетчик</div>
-                        <div class="vacancy">Оператор фрезерного и лазерного станков</div>
                         <div class="vacancy">Начальник отдела продаж</div>
+                        <div class="vacancy">Оператор фрезерного и лазерного станков</div>
                     </div>
                     <h3>Ваше имя:</h3>
                     <input type="text">
@@ -327,6 +496,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
