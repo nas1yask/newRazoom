@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.svg">
     <link rel="stylesheet/less" type="text/css" href="less/app.less" />
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,9 +13,27 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <!-- MODAL_WINDOW -->
+
+    <div class="modal_window">
+        <form>
+            <h2>Оставьте заявку</h2>
+            <p>И наш менеджер свяжется с вами</p>
+            <h3 class="inp_placeholder">Ваше имя:</h3>
+            <input type="text" class="inp">
+            <h3 class="inp_placeholder">Номер телефона:</h3>
+            <input type="tel" class="telNum inp">
+            <input type="submit" value="Оставить заявку">
+        </form>
+    </div>
+
+
     <!-- MAINBLOCK  -->
+    
     <section class="main_block" id="main">
         <!-- absolute lines  -->
         <img src="img/line1.svg" alt="" class="abs1">
@@ -23,10 +42,11 @@
         <img src="img/line1.svg" alt="" class="abs4">
         <img src="img/line1.svg" alt="" class="abs5">
         <img src="img/line1.svg" alt="" class="abs6">
-        <!-- absolute lines  -->
+        <!-- widget -->
+        <a href=https://wa.me/+7777777777777><i class="fa-brands fa-whatsapp"></i></a>
         <header>
             <div class="container">
-                <img src="./img/логотип.svg" alt="logo" class="logo">
+                <img src="./img/logo.svg" alt="logo" class="logo">
                 <menu>
                     <li><a href="#main">Главная</a></li>
                     <li><a href="#about">О нас</a></li>
@@ -96,7 +116,6 @@
         <div class="layer"></div> -->
     </section>
 
-
     <!-- ABOUT US -->
 
     <div class="about_us parallax-window" data-parallax="scroll" data-image-src="img/about1.jpg" id="about">
@@ -117,12 +136,12 @@
     <!-- ABOUT US 2 -->
 
     <div class="about_us2">
-        <img src="img/line1.svg" alt="" class="absl1">
+        <!-- <img src="img/line1.svg" alt="" class="absl1">
         <img src="img/line1.svg" alt="" class="absl2">
         <img src="img/line1.svg" alt="" class="absl3">
         <img src="img/line1.svg" alt="" class="abs7">
         <img src="img/line1.svg" alt="" class="abs8">
-        <img src="img/line1.svg" alt="" class="abs9">
+        <img src="img/line1.svg" alt="" class="abs9"> -->
         <div class="container">
             <article>
                 <nav></nav>
@@ -136,6 +155,7 @@
     </div>
 
     <!-- SERVICES  -->
+
     <div class="services" id="services">
             <h1>Наши услуги</h1>
             <div class="swiper mySwiper">
@@ -167,13 +187,10 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-            </div>
     </div>
-   
-
       
     <!-- PORTFOLIO -->
-    <!-- .wrapper .active { color: red; } -->
+
     <section class="portfolio" id="portfolio">
         <div class="layer">
             <h2>Наше портфолио</h2>
@@ -283,20 +300,6 @@
                     </div>
                     <div class="swiper-slideFB">
                         <nav></nav>
-                        <h4>❤beautiful life❤</h4>
-                        <h6>31 октября 2024</h6>
-                        <p>Добрый вечер, заказали вывеску сделали качественно 😍 благодарю всех
-                            сотрудников за проделанную работу 👍👏🏻 а вообще эту компанию знаю не первый год и видела лично их в работе поэтому  доверяю только им 😊</p>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
-                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
-                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
-                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
-                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
-                        </div>
-                    </div>
-                    <div class="swiper-slideFB">
-                        <nav></nav>
                         <h4>Dinara Mukatova</h4>
                         <h6>26 сентября 2023</h6>
                         <p>Давно клиенты этой компании. Очень удобный сервис, где широкий спектр услуг и можно сделать все в одном месте. Рекомендую!</p>
@@ -363,11 +366,25 @@
                             <i class="fa-solid fa-star" style="color: #F2403E;"></i>
                         </div>
                     </div>
+                    <div class="swiper-slideFB">
+                        <nav></nav>
+                        <h4>Татьяна Пикалова</h4>
+                        <h6>15 ноября 2019</h6>
+                        <p>Профессионалы и мастера своего дела. Качественно, в срок и всегда идеально!</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </div>
     </div>
+
     <!-- FORM -->
 
     <div class="formBlock" id="formBlock">
@@ -376,11 +393,10 @@
                 <form>
                     <h2>Оставьте <span>заявку</span></h2>
                     <p>И наш менеджер свяжется с вами</p>
-                    <h3>Ваше имя:</h3>
-                    <input type="text">
-                    <h3>Номер телефона:</h3>
-                    <input type="tel" class="telNum">
-                    <input type="file" accept=".docx, .pdf">
+                    <h3 class="inp_placeholder">Ваше имя:</h3>
+                    <input type="text" class="inp">
+                    <h3 class="inp_placeholder">Номер телефона:</h3>
+                    <input type="tel" class="telNum inp">
                     <textarea placeholder="Сообщение"></textarea>
                     <input type="submit" value="Оставить заявку">
                 </form>
@@ -395,58 +411,104 @@
 
     <!-- CERTIFICATES -->
 
-    
-
     <div class="certificates">
         <div class="container">
             <h2>Благодарности</h2>
             <div class="gramoty">
                 <a href="img/b1.jpg" data-lightbox="thanks" data-title="Описание благодарности">
                     <div class="gramota">
-                        <div class="layer"></div>
+                        <div class="layer">
+                            <div class="gramInf">
+                                <h5>Благодарственное письмо</h5>
+                                <p>Председатель оргкомитета Кубка, депутат Мажилиса Парламента РК</p>
+                            </div> 
+                        </div>
                     </div>
                 </a>
                 <div class="gramota centerImg">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                            <p></p>
+                        </div> 
+                    </div>
                 </div>
                 <div class="gramota centerImg">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                            <p></p>
+                        </div> 
+                    </div>
                 </div>
                 <div class="gramota">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota centerImg">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota centerImg">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota centerImg">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota centerImg">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
                 <div class="gramota">
-                    <div class="layer"></div>
+                    <div class="layer">
+                        <div class="gramInf">
+                                <p></p>
+                            </div> 
+                    </div>
                 </div>
             </div>
 
             <div class="show_all">
-                <button>Все благодарности</button>
+                <button>Показать больше</button>
             </div>
         </div>
     </div>
-
 
     <!-- RESUME -->
 
@@ -472,10 +534,10 @@
                         <div class="vacancy">Начальник отдела продаж</div>
                         <div class="vacancy">Оператор фрезерного и лазерного станков</div>
                     </div>
-                    <h3>Ваше имя:</h3>
-                    <input type="text">
-                    <h3>Номер телефона:</h3>
-                    <input type="tel" class="telNum">
+                    <h3 class="inp_placeholder">Ваше имя:</h3>
+                    <input type="text" class="inp">
+                    <h3 class="inp_placeholder">Номер телефона:</h3>
+                    <input type="tel" class="telNum inp">
                     <input type="file" accept=".docx, .pdf">
                     <div class="selectFile">
                         <div class="inputFile">
@@ -489,6 +551,54 @@
             </div>
         </div>
     </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+            <div class="contacts">
+                <img src="./img/logo.svg" alt="logo">
+                <section>
+                    <div class="info">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Астана, мкр. Юго-Восток (правая сторона), 11, пер. Акберен</p>
+                        </div>
+                        <article>
+                            <div class="tel">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="#" tel="#" class="tel">+7 778 778 78 78</a>
+                            </div>
+                            <div class="time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>Пн-сб – 09:00 до 24:00 <br> Для постоянных клиентов мы работаем в режиме 24/7</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="social">
+                        <h5>Социальные сети</h5>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                        <a href=https://wa.me/+7777777777777><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </section>
+            </div>
+            <div class="menu">
+                <menu>
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#formBlock">Заказать</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </menu>
+                <p>Copyright dgdghdfdgfsadf</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="other/slick/slick.min.js"></script>
@@ -504,27 +614,19 @@
 
 <!-- 
 Отправка формы
-inputmaked для формы номера 
 Форма обратной связи в модалке
 Изменение текста при выборе файла 
-Условие на файл формата
 Выборка Вакансии
 focus input поменять текст H3 
-Слайдер на главном
-Слайдер на отзывы 
-Услуги раздел 
 Виджет для обратной связи 
 Анимация 
 Моб версия 
 Хост данные 
 Оптимизация картинок и кода 
-header фиксед оцентировать центарльный контент 
 раздел футер макет 
-добавление карты (Google Map)
 
 
 
-форма для заказов вместо формы отправки резюме, форма резюме ниже блок с грамотами и благодарственные письма
 1) блок о нас 2) Почему нас выбирают + заменить картинку на меню в хедере вместо вакансий блок на форму с заявками картинки на темном фоне заменить на картинки связанные с рекламным агенством
 -->
 

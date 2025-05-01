@@ -4,7 +4,6 @@
     .layer{
         width: 100%;
         height: 100%;
-        // background: rgba(184, 6, 6, 0.4);
         background: rgba(1, 26, 36, 0.9);
         .container{
             width: 1200px;
@@ -38,7 +37,10 @@
                 }
                 h3{
                     color: rgb(183, 183, 183);
-                    margin-bottom: 13px;
+                    transform: translateY(27px);
+                    display: inline-block;
+                    transition: 0.3s;
+                    font-size: 16px;
                 }
                 input{
                     border-bottom: 2px solid rgb(205, 205, 205);
@@ -68,30 +70,7 @@
                     &:focus{
                         border-bottom: 2px solid @mainClr;
                     }
-                }
-                .selectFile{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    .inputFile{
-                        background: @mainClr;
-                        color: #fff;
-                        padding: 11px 30px;
-                        margin-right: 25px;
-                        .flex_c;
-                        border-radius: 26px;
-                        i{
-                            margin-right: 15px;
-                        }
-                        &:hover{
-                            cursor: pointer;
-                        }
-    
-                    }
-                    h3{
-                        margin-bottom: 0;
-                    }
-                }
+                } 
 
                 textarea{
                     width: 100%;

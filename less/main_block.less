@@ -36,6 +36,25 @@
         right: -370px;
         bottom: -340px;
     }
+    >a{
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 99999;
+        color: #fff;
+        background-color: @mainClr;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size: 40px;
+        .flex_c;
+        transition: 0.3s;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.1);
+        &:hover{
+            background-color: #fff;
+            color: @mainClr;
+        }
+    }
     header{
         margin: 0 auto;
         padding-top: 20px;
@@ -45,7 +64,7 @@
         position: fixed;
         top: 0;
         // left: 0;
-        z-index: 99;
+        z-index: 9900;
         width: 100%;
         .container{
             width: 1200px;
@@ -100,12 +119,11 @@
                 }
             }
             p{
-                color: rgb(93, 100, 110);
+                color: rgba(0, 0, 0, 0.687);
                 font-size: 22px;
                 line-height: 29px;
                 margin-bottom: 30px;
                 height: 60px;
-
                 span{
                     color: @mainClr;
                     font-weight: 600;
@@ -119,42 +137,37 @@
                     padding: 12px 23px;
                     color: #fff;
                     margin-right: 10px;
-                    border-radius: 2px;
+                    border-radius: 3px 10px 3px 10px;
                 }
                 a{
                     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
                     background: rgb(16, 26, 36);
                     padding: 12px 23px;
                     color: #fff;
-                    border-radius: 2px;
+                    border-radius: 3px 10px 3px 10px;
                 }
             }
             .socials{
                 width: 135px;
                 .flex_b;
                 a{
-                    width: 35px;
-                    height: 35px;
+                    width: 37px;
+                    height: 37px;
                     border: 1px solid rgb(16, 26, 36);
                     border-radius: 50%;
                     transition: 0.2s;
                     .flex_c;
                     svg{
-                        width: 20px;
-
-                        .social{
-                        }
+                        width: 24px;
                     }
                     &:nth-child(2){
-
                         svg{
-                            width: 17px;
+                            width: 20px;
                         }
-        
                     }
                     &:nth-child(3){
                         svg{
-                            width: 21px;
+                            width: 26px;
                         }
                     }
                     &:hover{
